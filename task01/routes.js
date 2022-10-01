@@ -3,17 +3,20 @@ const routesHandler = (req,res) => {
   // console.log('URL:', req.url, 'METHOD:', req.method, 'HEADERS:', req.headers)
 
   const url = req.url
-  const html1 = '<html><head><title>Task01</title></head><body>'
-  const html2 = '</body></html>'
-  
+  const body = '<html><head><title>Task01</title></head><body></body></html>'
+
   res.setHeader('Content-Type', 'text/html')
 
+  res.write(body)
+
   if (url === '/') {
-    res.write(`${html1}<h1>Home</h1><p>Hello! This is home.</p>${html2}`)
+    res.write('<h1>Home</h1>')
+    res.write('<p>Hello! This is home.</p>')
   }
 
   if (url === '/users') {
-    res.write(`${html1}<h1>Users</h1><ul><li>User 01</li></ul>${html2}`)
+    res.write('<h1>Users</h1>')
+    res.write('<ul><li>User 01</li></ul>')
   }
 
   res.end()
