@@ -12,6 +12,7 @@ const routesHandler = (req,res) => {
   if (url === '/') {
     res.write('<h1>Home</h1>')
     res.write('<p>Hello! This is home.</p>')
+    res.write('<form action="/create-user" method="POST"><label for="add">Add a user: </label><input type="text" name="user"><button type="submit">Add</button></form>')
   }
 
   if (url === '/users') {
