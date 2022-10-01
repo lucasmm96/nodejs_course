@@ -21,7 +21,7 @@ const routesHandler = (req,res) => {
     res.write('</body>')
     res.write('</head>')
     res.write('</html>')
-    
+
     return res.end()
   }
 
@@ -42,19 +42,19 @@ const routesHandler = (req,res) => {
 
   if (url === '/create-user' && method === 'POST') {
     const body = []
-    
+
     req.on('data', (chunk) => {
       body.push(chunk)
     })
-    
+
     req.on('end', () => {
       const parsedBody = Buffer.concat(body).toString()
       console.log('Parsed Body: ', parsedBody)
     })
-    
+
     res.statusCode = 302
     res.setHeader('Location', '/')
-    
+
     return res.end()
   }
 }
