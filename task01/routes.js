@@ -1,5 +1,5 @@
 const routesHandler = (req,res) => {
-  console.log('server is running...')
+  console.log('server is running on http://localhost:3000/')
   // console.log('URL:', req.url, 'METHOD:', req.method, 'HEADERS:', req.headers)
 
   const url = req.url
