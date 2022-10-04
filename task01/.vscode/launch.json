@@ -4,7 +4,7 @@
       "type": "node",
       "name": "Launch Program",
       "request": "launch",
-      "program": "${workspaceFolder}/app.js"
+      "program": "${workspaceFolder}/task01/app.js"
     }
   ]
 }
