@@ -2,10 +2,14 @@ const express = require('express')
 
 const app = express()
 
-app.use((req, res, next) => {
-  console.log('Running server...')
+app.use('/users', (req, res, next) => {
+  console.log('This is user route')
+  res.send('<h1>Users</h1>')
+})
+
+app.use('/', (req, res, next) => {
+  console.log('This is home route')
   res.send('<h1>Home</h1>')
-  next()
 })
 
 app.listen(3000)
