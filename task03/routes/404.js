@@ -5,7 +5,7 @@ const express = require('express')
 const router = express.Router()
 
 router.use((req, res, next) => {
-  console.log('middleware /404')
+  console.log('route /404')
   res.sendFile(path.join(__dirname, '..', 'views', '404.html'))
 })
 
