@@ -1,7 +1,8 @@
 doctype html
 html(lang="en")
   include includes/head.pug
-  body 
+  body
+    include includes/nav.pug
     h1 Home
     form(action='/add-user' method='POST')
       h3 User Registry
