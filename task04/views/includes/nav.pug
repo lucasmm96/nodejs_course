@@ -1,6 +1,6 @@
-nav
-  ul 
-    li
-      a(href="/") Home
-    li
-      a(href="/users") Users list      
+nav.main__nav
+  ul.main__list 
+    li.list__item
+      a.item__link(href='/' class=(route === '/' ? 'active' : '')) Home
+    li.list__item
+      a.item__link(href='/users' class=(route === '/users' ? 'active' : '')) Users
