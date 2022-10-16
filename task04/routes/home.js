@@ -8,7 +8,7 @@ router.get('/', (req, res) => {
 
 router.post('/add-user', (req, res) => {
   users.push(req.body.name);
-  res.redirect('/');
+  res.redirect('/users');
 })
 
 exports.router = router;
