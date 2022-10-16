@@ -3,3 +3,8 @@ html(lang="en")
   include includes/head.pug
   body 
     h1 Home
+    form(action='/add-user' method='POST')
+      h3 User Registry
+      label(for="name") Username:
+      input(type="text" name='name')
+      button(type='submit') Submit
