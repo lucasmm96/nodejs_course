@@ -3,7 +3,7 @@ const router = express.Router();
 const users = [];
 
 router.get('/', (req, res) => {
-  res.status(200).render('home', { pageTitle: 'Home' });
+  res.status(200).render('home', { pageTitle: 'Home', route: '/' });
 })
 
 router.post('/add-user', (req, res) => {
