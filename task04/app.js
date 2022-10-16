@@ -10,10 +10,6 @@ app.set('views', 'views');
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.static('public'));
 
-app.get('/users', (req, res) => {
-  res.status(200).render('users', { pageTitle: 'Users' , usersList: homeRoute.users });
-})
-
 app.use(homeRoute.router);
 app.use(usersRoute);
 app.use((req, res) => {
