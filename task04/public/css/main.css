@@ -30,3 +30,17 @@ body {
 .item__link.active {
   font-weight: bold;
 }
+
+.page-content {
+  padding: 20px;
+}
+
+.page-form {
+  background-color: #939393;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.form-item {
+  margin: 10px;
+}

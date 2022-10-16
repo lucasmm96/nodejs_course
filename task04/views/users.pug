@@ -3,11 +3,12 @@ html(lang="en")
   include includes/head.pug
   body
     include includes/nav.pug
-    h1 Users List
-    if usersList.length > 0
-      ul
-        each user in usersList
-          li= user
-    else
-      h3 The list is empty
+    .page-content
+      h1 Users List
+      if usersList.length > 0
+        ul
+          each user in usersList
+            li= user
+      else
+        h3 The list is empty
     
